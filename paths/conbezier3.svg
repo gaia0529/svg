@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <title>Example 07</title>
+  <desc>A path that draws a cubic bezier curve</desc>
+  <rect x="1" y="1" width="398" height="398" fill="none" stroke="blue" />
+  <path d="M 30 210 C 50 50 160 20 190 120 S 310 90 340 210" fill="none" stroke="black" />
+
+  <circle cx="30" cy="210" r="2" fill="none" stroke="red" />
+  <circle cx="50" cy="50" r="2" fill="none" stroke="red" />
+  <circle cx="160" cy="20" r="2" fill="none" stroke="red" />
+  <circle cx="190" cy="120" r="2" fill="none" stroke="red" />
+  <circle cx="310" cy="90" r="2" fill="none" stroke="red" />
+  <circle cx="340" cy="210" r="2" fill="none" stroke="red" />
+  <path d="M 30 210 L 50 50" fill="none" stroke="green" />
+  <path d="M 50 50 L 160 20" fill="none" stroke="green" />
+  <path d="M 160 20 L 190 120" fill="none" stroke="green" />
+  <path d="M 190 120 L 310 90" fill="none" stroke="green" />
+  <path d="M 310 90 L 340 210" fill="none" stroke="green" />
+</svg>

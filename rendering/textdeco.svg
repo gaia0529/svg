@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <defs>
+    <style type="text/css"><![CDATA[
+      text {font-size: 20px; fill:blue; stroke: red; stroke-width:.5;}
+    ]]></style>
+  </defs>
+  <text x="100" y="25">Normal Text</text>
+  <text x="100" y="60" style="text-decoration: line-through;">Text width line-through</text>
+  <text x="100" y="95" style="text-decoration: underline;">underlined text</text>
+  <text x="100" y="125" style="text-decoration: overline;">overlined text</text>
+  <text x="100" y="155" style="text-decoration: underline;">
+    <tspan style="fill:yellow;stroke:black;">S V G</tspan>
+  </text>
+</svg>

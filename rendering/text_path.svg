@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <defs>
+    <path id="MyPath" d="M 40 80
+      C 80 40 120 0 160 40
+      C 200 80 240 120 280 80
+      C 320 40 360 40 360 40" />
+  </defs>
+  <use xlink:href="#MyPath" style="fill:none; stroke:red;" />
+  <text style="font-family:Verdana;font-size:15px;fill:blue;">
+    <textPath xlink:href="#MyPath" startOffset="20%">
+      WoW! SVG (Scalable Vector Graphics)
+    </textPath>
+  </text>
+</svg>
