@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" version="1.1">
-  
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <g style="clip-rule:nonzero">
+    <clipPath id="VRClip">
+      <path d="M 0,0 L 100,100 150,100 200,0 Z" style="clip-rule:evenodd" />
+    </clipPath>
+    <rect x="0" y="0" width="400" height="300" style="fill:red;clip-path:url(#VRClip);" />
+  </g>
 </svg>
