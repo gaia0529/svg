@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
-  
+<svg width="4cm" height="5cm"  viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <rect x="10" y="35" width="40" height="40" style="stroke:black;fill:none;" />
+  <polyline points="10 35, 30 7.68, 50 35" style="stroke:black;fill:none;" />
+  <polyline points="30 75, 30 55, 40 55, 40 75" style="stroke:black;fill:none;" />
 </svg>

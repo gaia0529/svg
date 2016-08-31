@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="450" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="MyGradient">
+      <stop offset="0%" style="stop-color:#f96;" />
+      <stop offset="50%" style="stop-color:#9c9;" />
+      <stop offset="100%" style="stop-color:#906;" />
+    </radialGradient>
+  </defs>
+
+  <circle fill="url(#MyGradient)" cx="100" cy="100" r="100"/>
+</svg>
