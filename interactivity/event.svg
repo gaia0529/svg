@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg" version="1.1">
-  
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.svganim.js"></script>
+<svg width="5cm" height="5cm" viewBox="0 0 500 500" onload="make_shape(evt);" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <script type="text/ecmascript"><![CDATA[
+      var style;
+      function make_shape(evt){
+        var SVGDoc = evt.getTarget().getOwnerDocument();
+        var SVGRoot = SVGDoc.getDocumentElement();
+
+        var rect;
+        rect = SVGDoc.createElement("rect");
+        rect.setAttribute("x", 40);
+        rect.setAttribute("y", 20);
+        rect.setAttribute("width", 200);
+        rect.setAttribute("height", 200);
+        style = rect.getStyle();
+        style.setProperty("fill","blue");
+        rect.addEventListner("click", color_change, false);
+        SVGRoot.appendChild(rect);
+      }
+      function color_change(){
+        var fill = style.getPropertyValue("fill");
+        if(fill == "red") style.setProperty("fill", "blue");
+        else style.setProperty("fill", "red");
+      }
+  ]]></script>
 </svg>
