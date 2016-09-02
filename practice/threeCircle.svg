@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <circle id="my_circle" cx="150" cy="150" r="30" style="fill:red;stroke:black;">
-    <animate attributeName="r" attributeType="XML" begin="0" dur="3s" from="30" to="60" />
-    <animate attributeName="r" attributeType="XML" begin="3s" dur="6s" from="60" to="30" />
-  </circle>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <style type="text/css">
+    circle:hover {fill-opacity:0.9;}
+  </style>
+  <g style="fill-opacity:0.7;">
+    <circle cx="6.5cm" cy="2cm" r="100" style="fill:red;stroke:black;stroke-width:0.1cm" transform="translate(0,50)" />
+    <circle cx="6.5cm" cy="2cm" r="100" style="fill:red;stroke:black;stroke-width:0.1cm" transform="translate(70,150)" />
+    <circle cx="6.5cm" cy="2cm" r="100" style="fill:red;stroke:black;stroke-width:0.1cm" transform="translate(-70,150)" />
+  </g>
 </svg>
