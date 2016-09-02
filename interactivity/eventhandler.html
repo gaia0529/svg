@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Untitled Document</title>
+        <style>
+            svg {border: 1px solid #ff0000;}
+            rect {fill: blue}
+        </style>
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script>
+            $(function() {
+
+                $("#rect").on("click", function(){
+                  var fill = $(this).css('fill');
+
+                  if(fill == "blue"){
+                      console.log(fill);
+                      $(this).css("fill", "green");
+                  }
+
+            //      $(this).css("fill", "green");
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <svg width="200" height="200">
+            <rect id="rect" height="100" width="100" y="20" x="40" />
+        </svg>
+    </body>
+</html>

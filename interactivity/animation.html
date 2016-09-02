@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Untitled Document</title>
+        <style>
+          circle {transition: all 2s;}
+        </style>
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script>
+            $(function() {
+                $("#ani").attr({"cx": 200, "fill": "red"})
+            });
+        </script>
+    </head>
+
+    <body>
+        <svg width="500" height="500">
+            <circle id="ani" cx="50" cy="50" r="50" fill="blue" />
+        </svg>
+    </body>
+</html>

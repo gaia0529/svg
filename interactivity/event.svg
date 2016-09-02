@@ -1,29 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<script src="https://code.jquery.com/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.svganim.js"></script>
-<svg width="5cm" height="5cm" viewBox="0 0 500 500" onload="make_shape(evt);" xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <script type="text/ecmascript"><![CDATA[
-      var style;
-      function make_shape(evt){
-        var SVGDoc = evt.getTarget().getOwnerDocument();
-        var SVGRoot = SVGDoc.getDocumentElement();
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Untitled Document</title>
+        <style>
+            svg {
+                border: 1px solid #ff0000;
+            }
+        </style>
+        <script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+        <script>
+            $(function() {
+                $("#svg_1, #svg_2").click(on_Click);
+            });
 
-        var rect;
-        rect = SVGDoc.createElement("rect");
-        rect.setAttribute("x", 40);
-        rect.setAttribute("y", 20);
-        rect.setAttribute("width", 200);
-        rect.setAttribute("height", 200);
-        style = rect.getStyle();
-        style.setProperty("fill","blue");
-        rect.addEventListner("click", color_change, false);
-        SVGRoot.appendChild(rect);
-      }
-      function color_change(){
-        var fill = style.getPropertyValue("fill");
-        if(fill == "red") style.setProperty("fill", "blue");
-        else style.setProperty("fill", "red");
-      }
-  ]]></script>
-</svg>
+            function on_Click(event) {
+                $(event.target).css("fill", "#" + Math.floor(Math.random() * 0xffffff).toString(16));
+            }
+        </script>
+    </head>
+
+    <body>
+        <svg width="500px" height="400px">
+            <rect id="svg_1" height="95" width="104" y="52" x="47" stroke-width="5" stroke="#000000" fill="#FF0000" />
+            <rect id="svg_2" height="95" width="104" y="53" x="175" stroke-width="5" stroke="#000000" fill="#ffff00" />
+        </svg>
+    </body>
+</html>

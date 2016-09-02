@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Untitled Document</title>
+        <style>
+            svg {border: 1px solid #ff0000;}
+            rect {transition: all 1s;}
+        </style>
+        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+        <script>
+            $(function() {
+                $("#svg_1").click(on_Click);
+            });
+
+            function on_Click(event) {
+              var red = $(event.target).attr({"fill": "red"});
+              var blue = $(event.target).attr({"fill": "blue"});
+
+              if(blue) red
+              blue
+            }
+        </script>
+    </head>
+
+    <body>
+        <svg width="500" height="500">
+            <rect id="svg_1" height="95" width="104" y="52" x="47" stroke-width="5" stroke="#000000" fill="red" />
+        </svg>
+    </body>
+</html>
