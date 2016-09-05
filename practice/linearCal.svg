@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10">
+<svg contentScriptType="text/ecmascript" width="600" height="500" viewBox="0 0 300 500" xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" zoomAndPan="magnify"
+ contentStyleType="text/css" preserveAspectRatio="xMidYMid meet">
+ <title>Linear calcModes in animateColor and animateTransform</title>
+ <desc>shows incremental, not interpolated, color change</desc>
+
+ <circle fill="red" r="125" cx="150" cy="180">
+   <animateColor dur="7s" values="red;blue;yellow;red" calcMode="linear" attributeName="fill" repeatDur="indefinite" begin="0" />
+ </circle>
+
+ <rect fill="cyan" x="25" width="250" height="30" y="350">
+   <animateTransform type="translate" dur="7s" values="0,0;0,30;0,60;0,90"
+     repeatDur="indefinite" begin="0" attributeName="transform" calcMode="linear" />
+ </rect>
+ <text style="text-anchor:middle;font-size:24">
+   <tspan x="150" y="375">red</tspan>
+   <tspan x="150" y="405">blue</tspan>
+   <tspan x="150" y="435">yellow</tspan>
+   <tspan x="150" y="465">red</tspan>
+ </text>
+</svg>

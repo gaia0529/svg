@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10">
+<svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+  <defs>
+    <text id="p0"></text>
+    <text id="p1">S</text>
+    <text id="p2">Sc</text>
+    <text id="p3">Sca</text>
+    <text id="p4">Scal</text>
+    <text id="p5">Scala</text>
+    <text id="p6">Scalab</text>
+    <text id="p7">Scalabl</text>
+    <text id="p8">Scalable</text>
+
+    <text id="q0"></text>
+    <text id="q1">V</text>
+    <text id="q2">Ve</text>
+    <text id="q3">Vec</text>
+    <text id="q4">Vect</text>
+    <text id="q5">Vecto</text>
+    <text id="q6">Vector</text>
+
+    <text id="r0"></text>
+    <text id="r1">G</text>
+    <text id="r2">Gr</text>
+    <text id="r3">Gra</text>
+    <text id="r4">Grap</text>
+    <text id="r5">Graph</text>
+    <text id="r6">Graphi</text>
+    <text id="r7">Graphic</text>
+    <text id="r8">Graphics</text>
+  </defs>
+
+  <rect id="contour" x="0" y="0" width="200" height="200" style="stroke:green;fill:yellow" />
+  <rect x="10" y="180" width="50" height="18" style="fill:black" />
+
+  <text x="10" y="180" style="font-weight:bold;font-size:40;font-family:Arial;fill:red;stroke:black">
+    <tref xlink:href="#p0">
+      <animate id="a1" attributeName="xlink:href" values="#p0;#p1;#p2;#p3;#p4;#p5;#p6;#p7;#p8" dur="2s" fill="freeze" begin="go.click" />
+    </tref>
+  </text>
+
+  <text x="10" y="105" style="font-weight:bold;font-size:40;font-family:Arial;fill:red;stroke:black">
+    <tref xlink:href="#q0">
+      <animate id="a2" attributeName="xlink:href" values="#q0;#q1;#q2;#q3;#q4;#q5;#q6" dur="1.5s" fill="freeze" begin="a1.end" />
+    </tref>
+  </text>
+
+  <text x="10" y="155" style="font-weight:bold;font-size:40;font-family:Arial;fill:red;stroke:black">
+    <tref xlink:href="#r0">
+      <animate attributeName="xlink:href" values="#r0;#r1;#r2;#r3;#r4;#r5;#r6;#r7;#r8" dur="2s" fill="freeze" begin="a2.end" />
+    </tref>
+  </text>
+
+  <text x="35" y="195" style="text-anchor:middle;font-weight:bold;font-size:15;font-family:Arial;fill:white;stroke:black">
+    GO
+  </text>
+  <rect id="go" x="10" y="180" width="50" height="18" opacity="0.1" />
+</svg>

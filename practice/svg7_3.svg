@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10">
+<svg width="600" height="100" viewBox="0 0 600 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+  <defs>
+    <g id="fond">
+      <rect x="0" y="0" width="600" height="100" fill="white" />
+      <text x="300" y="60" style="text-anchor:middle;font-size:40;font-family:Arial;fill:red;">
+        Welcome to SVGOpen in Zurich
+      </text>
+    </g>
+    <clipPath id="spot" clipPathUnits="userSpaceOnUse">
+      <circle cx="0" cy="50" r="50">
+        <animateMotion dur="7s" repeatCount="indefinite" path="M0,0 l700 0" />
+      </circle>
+    </clipPath>
+  </defs>
+
+  <rect x="0" y="0" width="600" height="100" fill="black" />
+  <text x="300" y="60" style="text-anchor:middle;font-size:35;font-family:Arial;fill:yellow;fill-opacity:0.7;">
+    Welcome to SVGOpen in Zurich
+  </text>
+
+  <use clip-path="url(#spot)" xlink:href="#fond" />
+</svg>

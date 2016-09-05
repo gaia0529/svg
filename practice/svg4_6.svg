@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10">
+<svg width="400" height="450" viewBox="0 0 400 450" onload="init(evt);" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <script><![CDATA[
+    var svgdoc="", coordo=new Array(), points="";
+
+    function purger(evt){
+      svg = evt.getTarget().getOwnerDocument();
+    }
+  ]]></script>
+
+  <rect x="1" y="1" width="398" height="398" fill="none" stroke="blue" stroke-width="1" />
+  <polygon id="pol1" style="fill:lime;stroke:blue;stroke-width:1;fill-opacity:0;" points="200,75 308,137.5 308,262.5 200,325 92,262.5 92,137.5">
+    <animate id="a1" begin="go.click" attributeName="stroke-dashoffset" from="2542" to="0" dur="5s" fill="freeze" calcMode="evenPace" />
+    <animate befin="a1.end" attributeName="fill-opacity" from="0" to="0.8" dur="1s" fill="freeze" />
+  </polygon>
+
+  <text x="335" y="445" style="text-anchor:middle;font-size:15;font-family:Arial;fill:white;stroke:black;">
+    GO
+  </text>
+  <rect id="go" x="310" y="430" width="50" height="20" opacity="0.3" />
+</svg>
