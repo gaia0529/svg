@@ -1,89 +1,486 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<title>blueb</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>:: 시설안내 | 동아수석아카데미 ::</title>
+	<link rel="stylesheet" href="http://ksp.credu.com/kspace/KOREAN/CKO/css/cko.css" type="text/css">
+	<link rel="stylesheet" href="http://ksp.credu.com/customize/SRV0087/css/SRV0087.css" type="text/css">
+	<script type="text/javascript" src="http://ksp.credu.com/kspace/KOREAN/CKO/js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="http://ksp.credu.com/customize/SRV0087/js/jquery.bxslider.min.js"></script>
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+	<script type="text/javascript">
+		function init(){
+			var doc = document.getElementById("mainContent");
+			if(doc.offsetHeight == 0){
+			} else{
+				pageheight = doc.offsetHeight;
+				parent.document.getElementById("if_iframe").height = pageheight+"px";
+			}
+		}
+		window.onload = function(){
+			init();
+		}
 
-<script language=javascript>
-<!-- 자막 효과 코딩 시작 부분
-var line = new Array();
-var cnt = 0;
-var curr = "";
-var i = -1;
+		$(function(){
+      $(window).on('load', function(){
+        $('.bxslider').bxSlider();
 
-line[0]=new Array("울산=뉴시 안정섭 기자 = 현대중공업 노사가 올해 임금 및 단체협약 교섭 추석 전 타결을 위해 집중 교섭에 돌입했다.","")
-line[1]=new Array("5일 현대중 노사에 따르면 노사 교섭대표들은 추석 전 타결을 목표로 이날부터 오는 9일까지 매일 교섭하기로 합의했다.","")
-line[2]=new Array("월·수·금요일에는 교섭대표들이 참석하는 본교섭이 화·목요일에는 실무자들이 나선 가운데 실무교섭이 진행된다.","")
-line[3]=new Array("그러나 임단협 쟁점이 회사가 추진한 구조조정과 연이어 발생한 안전사고에 맞춰지면서 당분간 접점을 찾기는 어려울 전망이다.","")
-line[4]=new Array("앞서 지난달 노조는 회사가 추진하는 구조조정에 맞서 울산지법에 '전출명령과 희망퇴직 모집 등 중지 가처분신청'을 제기했다.","")
-line[5]=new Array("An enchanted moment","")
-line[6]=new Array("And it sees me through!","")
-line[7]=new Array("It's enough for this restless warrior","")
-line[8]=new Array("And can you feel the love tonight?","")
-line[9]=new Array("It is where we are","")
-line[10]=new Array("It's enough for this wide-eyed wanderer","")
-line[11]=new Array("That we got this far","")
-line[12]=new Array("And can you feel the love tonight","")
-line[13]=new Array("How it's laid to rest?","")
-line[14]=new Array("It's enough to make kings and vagabonds","")
-line[15]=new Array("Leave the very best","")
-line[16]=new Array("There's a time for everyone","")
-line[17]=new Array("If they only learn","")
-line[18]=new Array("That the twisting kaleidoscope","")
-line[19]=new Array("There's a rhyme and reason","")
-line[20]=new Array("To the wild outdoors","")
-line[21]=new Array("When the heart of this star-crossed voyager","")
-line[22]=new Array("Beats in time with yours","")
-line[23]=new Array("And can you feel the love tonight?","")
-line[24]=new Array("It is where we are","")
-line[25]=new Array("It's enough for this wide-eyed wanderer","")
-line[26]=new Array("That we got this far","")
-line[27]=new Array("And can you feel the love tonight","")
-line[28]=new Array("How it's laid to rest?","")
-line[29]=new Array("It's enough to make kings and vagabonds","")
-line[30]=new Array("Leave the very best","")
-line[31]=new Array("It's enough to make kings and vagabonds","")
-line[32]=new Array("Leave the very best","")
-line[33]=new Array("........ END ........","")
-
-function songticker(){
-  if (i < line[cnt][0].length - 1){
-    i++;
-    temp1 = line[cnt][0];
-    temp1 = temp1.split('');
-    curr = curr + temp1[i];
-    temp2 = line[cnt][1];
-    mtxt.innerHTML = temp2 + curr;
-    setTimeout('songticker()',50);
-    return;
-
-  }
-  i=-1,curr = "";
-  if (cnt<line.length-1)
-    cnt++;
-  else
-    cnt=0;
-  setTimeout('songticker()',600)
-}
-// 자막 효과 코딩 끝 부분-->
-</script>
-
+  			$("ul.panel li.panel_list:not("+$("ul.tab li a.selected").attr("href")+")").hide()
+  			$("ul.tab li a").click(function(){
+  				$("ul.tab li a").removeClass("selected");
+  				$(this).addClass("selected");
+  				$("ul.panel li.panel_list").hide();
+  				$($(this).attr("href")).show();
+  				return false;
+  			});
+      });
+		});
+	</script>
+	<!--[If lt IE 9]>
+    <script src="http://ksp.credu.com/customize/SRV0087/css/PIE.js"></script>
+ <![endif]-->
 </head>
-<body onload=songticker()>
-<div style="text-align: center;">
-  <span id=mtxt style="font-size: 20pt; overflow: auto;font-family: arial; height: 50px;"></span>
-</div>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="777" height="480">                                    <title>my vector image</title>                                    <!-- Created with Vector Paint - http://www.vectorpaint.yaks.com/ https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo -->                                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="#FFFFFF" stroke="none"/>                                <g class="currentLayer"><title>Layer 1</title><path fill="#4a90d6" fill-opacity="1" stroke="#8d8de8" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="0.78" marker-start="" marker-mid="" marker-end="" d="M121.51546388864517,144.98453611135483 C121.51546388864517,112.11160793455925 147.47126499361755,85.48453611135483 179.51546388864517,85.48453611135483 C211.5596627836728,85.48453611135483 237.51546388864517,112.11160793455925 237.51546388864517,144.98453611135483 C237.51546388864517,177.85746428815042 211.5596627836728,204.48453611135483 179.51546388864517,204.48453611135483 C147.47126499361755,204.48453611135483 121.51546388864517,177.85746428815042 121.51546388864517,144.98453611135483 z" id="svg_3" class="selected" filter="url(#f002)"/></g><defs><filter id="f002" inkscape:label="Smart jelly" inkscape:menu="Bevels" inkscape:menu-tooltip="Same as Matte jelly but with more controls" height="1" width="1" y="0" x="0" color-interpolation-filters="sRGB">
-            <feBlend result="result3" mode="normal" in2="result91"/>
-            <feComposite result="result4" operator="arithmetic" k2="1" in2="result3"/>
-            <feColorMatrix id="feColorMatrix3006" in="result4" result="result0" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.85 0 "/>
-            <feGaussianBlur stdDeviation="7" in="SourceAlpha"/>
-            <feSpecularLighting result="result1" specularExponent="25" specularConstant="1" surfaceScale="5">
-                <feDistantLight azimuth="225" elevation="60"/>
-            </feSpecularLighting>
-            <feComposite in2="result0" k1=".5" k2="1" operator="arithmetic" k3=".5"/>
-            <feComposite result="result2" in2="result0" operator="atop"/>
-            <feComposite operator="in" in2="SourceGraphic"/>
-        </filter></defs></svg>
+<body>
+	<div class="wrap_cm" id="mainContent">
+		<div id="contents" class="contents">
+			<!-- path -->
+			<div class="path">
+				<p>홈<span>인재개발원</span><em>시설안내</em></p>
+			</div>
+			<!-- path -->
+			<div class="con_title">
+				<h1>시설안내</h1>
+			</div>
+			<div class="subContent">
+				<!-- 서브 컨텐츠 -->
+				<div class="sisul_wrap">
+
+					<div class="tabs">
+						<ul class="tab">
+							<li class="first_li"><a href="#tab1" class="selected">용인 인재개발원</a></li>
+							<li class="last_li"><a href="#tab2">상주 인재개발원</a></li>
+						</ul>
+						<ul class="panel">
+							<li id="tab1" class="panel_list">
+								<div class="da_tabCont">
+									<div class="da_mrg_b40">
+										<ul class="da_sisul">
+											<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sisul01.png" alt="연수1관"></li>
+											<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sisul02.png" alt="연수2관"></li>
+											<li class="last"><img src="http://ksp.credu.com/customize/SRV0087/images/img_sisul03.png" alt="제3강의장(연구본부)"></li>
+										</ul>
+										<div class="da_tblWrap">
+										<table class="da_tblTy02 txt_L">
+										<caption>상갈 인재개발원 정보</caption>
+										<tbody>
+										<tr>
+											<th scope="row" style="width:130px">명칭</th>
+											<td>동아쏘시오홀딩스 인재개발원</td>
+										</tr>
+										<tr>
+											<th scope="row">주소</th>
+											<td>경기도 용인시 기흥구 상갈동 47-1 우) 446-905</td>
+										</tr>
+										<tr>
+											<th scope="row">규모</th>
+											<td>총건평 649평 (지상 3층 건물 2동) </td>
+										</tr>
+										<tr>
+											<th scope="row">연락처</th>
+											<td>Tel) 031-280-1488 , Fax) 031-283-4537</td>
+										</tr>
+										<tr>
+											<th scope="row">비고</th>
+											<td>Tel) 031-280-1488 , Fax) 031-283-4537서울도심으로부터 1시간 소요</td>
+										</tr>
+										</tbody>
+										</table>
+										</div>
+									</div>
+
+									<div class="da_mrg_b40">
+										<div class="titWrap">
+											<span class="titBar"></span>
+											<h2>시설규모</h2>
+										</div>
+										<h3 class="da_dot_tit da_mrg_t20">&middot; 강의장(연수시설)</h3>
+										<div class="da_tblWrap da_mrg_t10">
+											<table class="da_tblTy01 txt_C">
+											<caption>강의장(연수시설) 정보</caption>
+											<thead>
+											<tr>
+												<th scope="col" style="width:184px">시설명</th>
+												<th scope="col" style="width:110px">실수</th>
+												<th scope="col" style="width:110px">수용인원(명)</th>
+												<th scope="col">비고</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>제1강의실</td>
+												<td>1</td>
+												<td>80</td>
+												<td>연수1관</td>
+											</tr>
+											<tr>
+												<td>제2강의실</td>
+												<td>1</td>
+												<td>30</td>
+												<td>연수2관</td>
+											</tr>
+											<tr>
+												<td>제3강의실</td>
+												<td>1</td>
+												<td>100</td>
+												<td>제품개발연구소 지하1층</td>
+											</tr>
+											<tr>
+												<td>세미나실</td>
+												<td>1</td>
+												<td>20</td>
+												<td>연수2관</td>
+											</tr>
+											</tbody>
+										</table>
+										</div>
+									</div>
+
+									<div class="da_mrg_b40">
+										<h3 class="da_dot_tit">&middot; 부대시설</h3>
+										<div class="da_tblWrap da_mrg_t10">
+											<table class="da_tblTy01 txt_C">
+											<caption>부대시설 정보</caption>
+											<thead>
+											<tr>
+												<th scope="col" style="width:184px">시설명</th>
+												<th scope="col" style="width:110px">실수</th>
+												<th scope="col" style="width:110px">수용인원(명)</th>
+												<th scope="col">비고</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>1관 휴게실</td>
+												<td>1</td>
+												<td>10</td>
+												<td>탁구대 2개, PC 2개 구비</td>
+											</tr>
+											<tr>
+												<td>1관 배드민턴장</td>
+												<td>1</td>
+												<td>20</td>
+												<td>야외(코트 2개)</td>
+											</tr>
+											<tr>
+												<td>2관 체력단련실</td>
+												<td>1</td>
+												<td>10</td>
+												<td>탁구대1개, 운동기구 구비</td>
+											</tr>
+											<tr>
+												<td>3강의장 휴게실</td>
+												<td>2</td>
+												<td>25</td>
+												<td>탁구대2개, 테이블, 의자 구비</td>
+											</tr>
+											<tr>
+												<td>샤워실</td>
+												<td>3</td>
+												<td>10</td>
+												<td>1관 2실, 2관 1실</td>
+											</tr>
+											<tr>
+												<td>교육진행실</td>
+												<td>2</td>
+												<td>8</td>
+												<td>1,3강의실 각 1실</td>
+											</tr>
+											</tbody>
+										</table>
+										</div>
+									</div>
+
+									<div class="da_mrg_b40">
+										<h3 class="da_dot_tit">&middot; 숙소</h3>
+										<div class="da_tblWrap da_mrg_t10">
+											<table class="da_tblTy01 txt_C">
+											<caption>부대시설 정보</caption>
+											<thead>
+											<tr>
+												<th scope="col" style="width:184px">시설명</th>
+												<th scope="col" style="width:110px">실수</th>
+												<th scope="col" style="width:110px">수용인원(명)</th>
+												<th scope="col">비고</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>3인실</td>
+												<td>8</td>
+												<td>24</td>
+												<td>연수 2관</td>
+											</tr>
+											<tr>
+												<td>6인실</td>
+												<td>1</td>
+												<td>6</td>
+												<td>연수 1관(2층 침대)</td>
+											</tr>
+											<tr>
+												<td>10인실</td>
+												<td>6</td>
+												<td>60</td>
+												<td>연수 1관(2층 침대)</td>
+											</tr>
+											</tbody>
+										</table>
+										</div>
+									</div>
+									<div class="da_mrg_b40">
+										<h3 class="da_dot_tit">&middot; 식당</h3>
+										<div class="da_tblWrap da_mrg_t10">
+											<table class="da_tblTy01 txt_C">
+											<caption>식당 정보</caption>
+											<thead>
+											<tr>
+												<th scope="col" style="width:184px">실수</th>
+												<th scope="col" style="width:110px">수용인원(명)</th>
+												<th scope="col" style="width:110px">규모</th>
+												<th scope="col">비고</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>1</td>
+												<td>140</td>
+												<td>62평</td>
+												<td>연구본부 본관</td>
+											</tr>
+											</tbody>
+										</table>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li id="tab2" class="panel_list">
+								<div class="da_tabCont">
+									<div class="da_mrg_b40">
+										<div class="bxsliderWrap">
+											<ul class="bxslider">
+												<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sanju_sisul01.jpg" title="체력단련실" /></li>
+												<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sanju_sisul02.jpg" title="중강의장" /></li>
+												<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sanju_sisul03.jpg" title="소강의장" /></li>
+												<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sanju_sisul04.jpg" title="대강의장" /></li>
+												<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sanju_sisul05.jpg" title="계단식영화관" /></li>
+												<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sanju_sisul06.jpg" title="2층 휴식공간" /></li>
+												<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sanju_sisul07.jpg" title="식당" /></li>
+												<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sanju_sisul08.jpg" title="숙소" /></li>
+												<li><img src="http://ksp.credu.com/customize/SRV0087/images/img_sanju_sisul09.jpg" title="외부전경" /></li>
+											</ul>
+											</div>
+										<div class="da_tblWrap">
+										<table class="da_tblTy02 txt_L">
+										<caption>상갈 인재개발원 정보</caption>
+										<tbody>
+										<tr>
+											<th scope="row" style="width:130px">명칭</th>
+											<td>동아쏘시오홀딩스 인재개발원</td>
+										</tr>
+										<tr>
+											<th scope="row">주소</th>
+											<td>경기도 용인시 기흥구 상갈동 47-1 우) 446-905</td>
+										</tr>
+										<tr>
+											<th scope="row">규모</th>
+											<td>총건평 649평 (지상 3층 건물 2동) </td>
+										</tr>
+										<tr>
+											<th scope="row">연락처</th>
+											<td>Tel) 031-280-1488 , Fax) 031-283-4537</td>
+										</tr>
+										<tr>
+											<th scope="row">비고</th>
+											<td>Tel) 031-280-1488 , Fax) 031-283-4537서울도심으로부터 1시간 소요</td>
+										</tr>
+										</tbody>
+										</table>
+										</div>
+									</div>
+
+									<div class="da_mrg_b40">
+										<div class="titWrap">
+											<span class="titBar"></span>
+											<h2>시설규모</h2>
+										</div>
+										<h3 class="da_dot_tit da_mrg_t20">&middot; 강의장(연수시설)</h3>
+										<div class="da_tblWrap da_mrg_t10">
+											<table class="da_tblTy01 txt_C">
+											<caption>강의장(연수시설) 정보</caption>
+											<thead>
+											<tr>
+												<th scope="col" style="width:184px">시설명</th>
+												<th scope="col" style="width:110px">실수</th>
+												<th scope="col" style="width:110px">수용인원(명)</th>
+												<th scope="col">비고</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>제1강의실</td>
+												<td>1</td>
+												<td>80</td>
+												<td>연수1관</td>
+											</tr>
+											<tr>
+												<td>제2강의실</td>
+												<td>1</td>
+												<td>30</td>
+												<td>연수2관</td>
+											</tr>
+											<tr>
+												<td>제3강의실</td>
+												<td>1</td>
+												<td>100</td>
+												<td>제품개발연구소 지하1층</td>
+											</tr>
+											<tr>
+												<td>세미나실</td>
+												<td>1</td>
+												<td>20</td>
+												<td>연수2관</td>
+											</tr>
+											</tbody>
+										</table>
+										</div>
+									</div>
+
+									<div class="da_mrg_b40">
+										<h3 class="da_dot_tit">&middot; 부대시설</h3>
+										<div class="da_tblWrap da_mrg_t10">
+											<table class="da_tblTy01 txt_C">
+											<caption>부대시설 정보</caption>
+											<thead>
+											<tr>
+												<th scope="col" style="width:184px">시설명</th>
+												<th scope="col" style="width:110px">실수</th>
+												<th scope="col" style="width:110px">수용인원(명)</th>
+												<th scope="col">비고</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>1관 휴게실</td>
+												<td>1</td>
+												<td>10</td>
+												<td>탁구대 2개, PC 2개 구비</td>
+											</tr>
+											<tr>
+												<td>1관 배드민턴장</td>
+												<td>1</td>
+												<td>20</td>
+												<td>야외(코트 2개)</td>
+											</tr>
+											<tr>
+												<td>2관 체력단련실</td>
+												<td>1</td>
+												<td>10</td>
+												<td>탁구대1개, 운동기구 구비</td>
+											</tr>
+											<tr>
+												<td>3강의장 휴게실</td>
+												<td>2</td>
+												<td>25</td>
+												<td>탁구대2개, 테이블, 의자 구비</td>
+											</tr>
+											<tr>
+												<td>샤워실</td>
+												<td>3</td>
+												<td>10</td>
+												<td>1관 2실, 2관 1실</td>
+											</tr>
+											<tr>
+												<td>교육진행실</td>
+												<td>2</td>
+												<td>8</td>
+												<td>1,3강의실 각 1실</td>
+											</tr>
+											</tbody>
+										</table>
+										</div>
+									</div>
+
+									<div class="da_mrg_b40">
+										<h3 class="da_dot_tit">&middot; 숙소</h3>
+										<div class="da_tblWrap da_mrg_t10">
+											<table class="da_tblTy01 txt_C">
+											<caption>부대시설 정보</caption>
+											<thead>
+											<tr>
+												<th scope="col" style="width:184px">시설명</th>
+												<th scope="col" style="width:110px">실수</th>
+												<th scope="col" style="width:110px">수용인원(명)</th>
+												<th scope="col">비고</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>3인실</td>
+												<td>8</td>
+												<td>24</td>
+												<td>연수 2관</td>
+											</tr>
+											<tr>
+												<td>6인실</td>
+												<td>1</td>
+												<td>6</td>
+												<td>연수 1관(2층 침대)</td>
+											</tr>
+											<tr>
+												<td>10인실</td>
+												<td>6</td>
+												<td>60</td>
+												<td>연수 1관(2층 침대)</td>
+											</tr>
+											</tbody>
+										</table>
+										</div>
+									</div>
+									<div class="da_mrg_b40">
+										<h3 class="da_dot_tit">&middot; 식당</h3>
+										<div class="da_tblWrap da_mrg_t10">
+											<table class="da_tblTy01 txt_C">
+											<caption>식당 정보</caption>
+											<thead>
+											<tr>
+												<th scope="col" style="width:184px">실수</th>
+												<th scope="col" style="width:110px">수용인원(명)</th>
+												<th scope="col" style="width:110px">규모</th>
+												<th scope="col">비고</th>
+											</tr>
+											</thead>
+											<tbody>
+											<tr>
+												<td>1</td>
+												<td>140</td>
+												<td>62평</td>
+												<td>연구본부 본관</td>
+											</tr>
+											</tbody>
+										</table>
+										</div>
+									</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+
+				</div>
+				<!-- //서브 컨텐츠 -->
+			</div>
+		</div>
+	</div>
 </body>
 </html>
