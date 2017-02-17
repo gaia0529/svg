@@ -20,14 +20,16 @@
 			}
 		}
 		window.onload = function(){
+			alert('111111111');
 			init();
 		}
 
 		$(function(){
       $(window).on('load', function(){
+				alert('2222222222');
         $('.bxslider').bxSlider();
 
-  			$("ul.panel li.panel_list:not("+$("ul.tab li a.selected").attr("href")+")").hide()
+				$("ul.panel li.panel_list:not("+$("ul.tab li a.selected").attr("href")+")").hide();
   			$("ul.tab li a").click(function(){
   				$("ul.tab li a").removeClass("selected");
   				$(this).addClass("selected");
